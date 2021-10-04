@@ -46,3 +46,6 @@ else{arr.push("B ")}
 }
 
 return arr.join()[0] }
+
+
+//sol 3. 이기는 case 를 obj 로 만들기 

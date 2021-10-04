@@ -9,6 +9,7 @@ function solution(arr){
             for(let k=0; k<4; k++){
                 let nx=i+dx[k];
                 let ny=j+dy[k];
+
                 if(nx>=0 && nx<n && ny>=0 && ny<n && arr[nx][ny]>=arr[i][j]){
                     flag=0;
                     break;
@@ -26,5 +27,7 @@ let arr=[[5, 3, 7, 2, 3],
          [7, 2, 5, 3, 4],
          [4, 3, 6, 4, 1],
          [8, 7, 3, 5, 2]];
-         
+
 console.log(solution(arr));
+
+

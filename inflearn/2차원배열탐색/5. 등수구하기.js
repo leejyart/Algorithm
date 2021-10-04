@@ -19,8 +19,8 @@ function solution(arr){
     let n=arr.length;
     let array= [];
     for(let i=0; i<n; i++){
+        let num = 1; 
         for(let j=0; j<n; j++){
-            let num = 1 
             if(arr[j]>arr[i]) 
             num++;
         }
