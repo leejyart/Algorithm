@@ -6,6 +6,7 @@
                     while(sum>m){
                         sum-=arr[lt++];
                     }
+                    //끝에서 부터 계산한다. 1, 2,... n 개 를 더해줌. 
                     answer+=(rt-lt+1);
                 }               
                 return answer;
