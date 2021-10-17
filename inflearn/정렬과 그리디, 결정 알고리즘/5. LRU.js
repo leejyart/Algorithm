@@ -1,14 +1,25 @@
 function solution(size, arr){
+    //삽입정렬 응용문제
+    
+    //모든 요소를 0으로 초기화 한다. 
     let answer=Array.from({length:size}, ()=>0);
     arr.forEach(x => {
         let pos=-1;
         for(let i=0; i<size; i++) if(x===answer[i]) pos=i;
         if(pos===-1){
+            
+        //answer.unshift(x);
+        //if(answer.length>size) answer.pop
+            
             for(let i=size-1; i>=1; i--){
                 answer[i]=answer[i-1];
             }
         }
         else{
+
+        //answer.splice(pos,1)
+        //answer.unshift(x);
+
             for(let i=pos; i>=1; i--){
                 answer[i]=answer[i-1];
             }
